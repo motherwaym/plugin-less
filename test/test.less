@@ -2,7 +2,19 @@
 
 @red: red;
 
+@bar: green;
+
 body {
-  .red();
-  background-color: @red;
+  div {
+    .red();
+    border: 1px solid @red;
+  }
+
+  h1 {
+    background-color: @foo;
+  }
+
+  h2 {
+    background-color: @bar;
+  }
 }

@@ -21,7 +21,9 @@ module.exports = new CSSPluginBase(function compile(style, address, opts) {
       relativeUrls: opts.relativeUrls || false,
       sourceMap: loader.builder && {
         sourceMapBasepath: filename.replace(/[^/]+$/, '')
-      }
+      },
+      globalVars: opts.globalVars || false,
+      modifyVars: opts.modifyVars || false
     });
   })
   .then(function(output) {

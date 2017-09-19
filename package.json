@@ -16,5 +16,8 @@
         "browser": "./less-browser.js"
       }
     }
+  },
+  "devDependencies": {
+    "systemjs-builder": "^0.16.11"
   }
 }
